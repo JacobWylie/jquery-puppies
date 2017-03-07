@@ -33,6 +33,12 @@ $('#add-pet').on('click', function() {
 $('img').css('display', 'none').fadeIn(1800);
 
 
+// Styles card when selected
+$('.card').on('click', function () {
+  $(this).toggleClass('selected');
+});
+
+
 
 
 
