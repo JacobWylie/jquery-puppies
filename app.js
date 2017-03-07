@@ -25,6 +25,11 @@ $('#add-pet').on('click', function() {
   // Attach the new element to the page
   $('#posted-pets').append($newPet);
 
+  // Removes pet when x in clicked
+  $('.close').on('click', function() {
+    $(this).parent().remove();
+  });
+
   // Reset the form fields
   $name.val('');
   $species.val('Dog');
