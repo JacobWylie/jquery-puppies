@@ -7,7 +7,6 @@ $('.loc').hover(
 });
 
 
-
 // Adds a pet to the page with user input
 $('#add-pet').on('click', function() {
 
@@ -25,8 +24,12 @@ $('#add-pet').on('click', function() {
 
   // Attach the new element to the page
   $('#posted-pets').append($newPet);
-});
 
+  // Reset the form fields
+  $name.val('');
+  $species.val('Dog');
+  $notes.val('')
+});
 
 
 // Puppy images fade in
