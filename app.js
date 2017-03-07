@@ -7,13 +7,14 @@ $('.loc').hover(
 });
 
 
+
 // Adds a pet to the page with user input
 $('#add-pet').on('click', function() {
 
-// Grab info from the 'Post' form
-var $name = $('#pet-name');
-var $species = $('#pet-species');
-var $notes = $('#pet-notes');
+  // Grab info from the 'Post' form
+  var $name = $('#pet-name');
+  var $species = $('#pet-species');
+  var $notes = $('#pet-notes');
 
   // Assemble the HTML of our new element with the above variables
   var $newPet = $(
@@ -25,3 +26,32 @@ var $notes = $('#pet-notes');
   // Attach the new element to the page
   $('#posted-pets').append($newPet);
 });
+
+
+
+// Puppy images fade in
+$('img').css('display', 'none').fadeIn(1800);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
